@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D92B6311F6793DC00AECBB6 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 5D92B6301F6793DC00AECBB6 /* Notes */; };
 		5DE254BF1F6785F900B2609E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE254BE1F6785F900B2609E /* AppDelegate.swift */; };
 		5DE254C11F6785F900B2609E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE254C01F6785F900B2609E /* ViewController.swift */; };
 		5DE254C41F6785F900B2609E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE254C21F6785F900B2609E /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D92B6301F6793DC00AECBB6 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 		5DE254BB1F6785F900B2609E /* RosettaStone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RosettaStone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DE254BE1F6785F900B2609E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DE254C01F6785F900B2609E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D92B62D1F67938D00AECBB6 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				5DE254C21F6785F900B2609E /* Main.storyboard */,
+				5DE254C71F6785F900B2609E /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		5D92B62E1F67939400AECBB6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5DE254C01F6785F900B2609E /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5D92B62F1F6793B300AECBB6 /* NecessaryFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5DE254BE1F6785F900B2609E /* AppDelegate.swift */,
+				5DE254C51F6785F900B2609E /* Assets.xcassets */,
+				5DE254CA1F6785F900B2609E /* Info.plist */,
+				5D92B6301F6793DC00AECBB6 /* Notes */,
+			);
+			name = NecessaryFiles;
+			sourceTree = "<group>";
+		};
 		5DE254B21F6785F900B2609E = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +84,9 @@
 		5DE254BD1F6785F900B2609E /* RosettaStone */ = {
 			isa = PBXGroup;
 			children = (
-				5DE254BE1F6785F900B2609E /* AppDelegate.swift */,
-				5DE254C01F6785F900B2609E /* ViewController.swift */,
-				5DE254C21F6785F900B2609E /* Main.storyboard */,
-				5DE254C51F6785F900B2609E /* Assets.xcassets */,
-				5DE254C71F6785F900B2609E /* LaunchScreen.storyboard */,
-				5DE254CA1F6785F900B2609E /* Info.plist */,
+				5D92B62F1F6793B300AECBB6 /* NecessaryFiles */,
+				5D92B62E1F67939400AECBB6 /* ViewControllers */,
+				5D92B62D1F67938D00AECBB6 /* StoryBoards */,
 			);
 			path = RosettaStone;
 			sourceTree = "<group>";
@@ -124,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D92B6311F6793DC00AECBB6 /* Notes in Resources */,
 				5DE254C91F6785F900B2609E /* LaunchScreen.storyboard in Resources */,
 				5DE254C61F6785F900B2609E /* Assets.xcassets in Resources */,
 				5DE254C41F6785F900B2609E /* Main.storyboard in Resources */,
@@ -300,6 +328,7 @@
 				5DE254CF1F6785F900B2609E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

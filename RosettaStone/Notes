@@ -1,0 +1,20 @@
+1. What is the difference between Localization and Internationalization?
+
+    - Localization
+        Refers to the adaptation of a product, application or document content to meet the language, cultural and other requirements of a specific target market (a locale).
+
+        1. Numeric date and time formats.
+        2. Use of currency.
+        3. Keyboard usage.
+        4. Collation (ordering things in a particular way, as we have numbered lists) and sorting.
+        5. Symbols, icons and colours.
+        6. Text and graphics containing references to objects, actions or ideas which, in a given culture, may be subject to misinterpretation or viewed as insensitive.
+        7. Varying legal requirements.
+
+    - Internationalization
+        Refers to the design and development of a product, application or document content that enables easy localization for target audiences that vary in culture, region and language.
+
+        1. Designing and developing in a way that removes barriers to localization or international deployment. This includes such things as taking care to fill your app with localized strings wherever you need text to be displayed, and to make sure there are no strings that are hard-coded in your storyboards.
+        2. Providing support for features that may not be used until localization occurs. For example, using AutoLayout and adding constraints to support bidirectional text, or for identifying language. Also, testing for usability in double-height and double-length languages as well, making even more use of good constraints.
+        3. Enabling code to support local, regional, language, or culturally related preferences. Typically this involves incorporating predefined localization data and features derived from existing libraries or user preferences. Examples include date and time formats, local calendars, number formats and numeral systems, sorting and presentation of lists, handling of personal names and forms of address, etc.
+        4. Separating localizable elements from source code or content, such that localized alternatives can be loaded or selected based on the user's international preferences as needed.
