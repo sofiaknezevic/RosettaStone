@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5D64BB341F68D6ED00BC4D26 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D64BB331F68D6ED00BC4D26 /* MainViewController.swift */; };
 		5D64BB371F68F00800BC4D26 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D64BB361F68F00800BC4D26 /* FoodTableViewCell.swift */; };
-		5D64BB3A1F68F0BA00BC4D26 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D64BB391F68F0BA00BC4D26 /* Food.swift */; };
 		5D92B6311F6793DC00AECBB6 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 5D92B6301F6793DC00AECBB6 /* Notes */; };
 		5DE254BF1F6785F900B2609E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE254BE1F6785F900B2609E /* AppDelegate.swift */; };
 		5DE254C41F6785F900B2609E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE254C21F6785F900B2609E /* Main.storyboard */; };
@@ -20,7 +19,6 @@
 /* Begin PBXFileReference section */
 		5D64BB331F68D6ED00BC4D26 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5D64BB361F68F00800BC4D26 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
-		5D64BB391F68F0BA00BC4D26 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		5D92B6301F6793DC00AECBB6 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 		5DE254BB1F6785F900B2609E /* RosettaStone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RosettaStone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DE254BE1F6785F900B2609E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +50,6 @@
 		5D64BB381F68F0A200BC4D26 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5D64BB391F68F0BA00BC4D26 /* Food.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -188,7 +185,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D64BB341F68D6ED00BC4D26 /* MainViewController.swift in Sources */,
-				5D64BB3A1F68F0BA00BC4D26 /* Food.swift in Sources */,
 				5DE254BF1F6785F900B2609E /* AppDelegate.swift in Sources */,
 				5D64BB371F68F00800BC4D26 /* FoodTableViewCell.swift in Sources */,
 			);

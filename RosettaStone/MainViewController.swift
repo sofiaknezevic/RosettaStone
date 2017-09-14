@@ -10,16 +10,36 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    //MARK: - View LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        view.addSubview(foodRatingTableView)
+        setConstraints()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
+    //MARK: - Helpers
+    func setConstraints() {
+        foodRatingTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        foodRatingTableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        foodRatingTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        foodRatingTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+    }
+    
+    //MARK: - Lazy Initializers
+    lazy var foodRatingTableView:UITableView = {
+        let foodRatingTableView = UITableView(frame: .zero, style: .plain)
+        foodRatingTableView.delegate = self
+        foodRatingTableView.dataSource = self
+        foodRatingTableView.register(FoodTableViewCell.self, forCellReuseIdentifier: "foodTableViewCell")
+        foodRatingTableView.translatesAutoresizingMaskIntoConstraints = false
+        return foodRatingTableView
+    }()
+
 }
 
 //MARK: - UITableView Delegate & DataSource
@@ -31,7 +51,8 @@ extension MainViewController:UITableViewDataSource {
         return 10
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "foodTableViewCell", for: indexPath) as! FoodTableViewCell
+        return cell
     }
 }
 

@@ -19,6 +19,8 @@ class FoodTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    
+    func configureCell(food:Food) -> Void {
+        
+    }
 
 }
